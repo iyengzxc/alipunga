@@ -2,8 +2,8 @@
 @extends('layout.app')
 
 @section('content')
-    <h1>Registration Page</h1>
-    <form action="{{route('attendees')}}" method="post">
+    <h1>Register now Attendees</h1>
+    <form action="{{route('register')}}" method="post">
         @csrf  
         <div>
             <label for="name">Name

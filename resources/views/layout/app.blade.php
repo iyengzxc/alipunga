@@ -9,17 +9,19 @@
 <body>
     <header>
         <nav>
-            
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('collection') }}">Collection</a>
+        <a href="{{ route('package') }}">Package</a>
             
            
             
             @if(auth()->check())
                 <a href="{{route('logout')}}">Log Out</a>
             @else
-                <a href="{{ route('home') }}">Home</a>
+               
                 <a href="{{ route('attendees') }}">Attendees</a>
-                <a href="{{ route('collection') }}">Collection</a>
-                <a href="{{ route('package') }}">Package</a>
+                
+               
                 
                 <a href="{{ route('login') }}">Log In</a>
                 
