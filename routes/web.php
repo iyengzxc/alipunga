@@ -30,5 +30,4 @@ Route::get('/login',[AuthController::class,'index'])->name('login');
 
 Route::post('/login',[AuthController::class,'login'])->name('login.submit');
 Route::get('/logout',[AuthController::class,'logout'])->middleware('auth')->name('logout');
-Route::post('/attendees',[AuthController::class,'attendees'])->name('attendees');
-Route::post('/register',[AuthController::class,'register'])->name('register');
+Route::get('/attendees',[AuthController::class,'attendees'])->name('attendees');
